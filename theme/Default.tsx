@@ -58,7 +58,7 @@ const muiTheme = extendMuiTheme({
         common: {
           white: "#FFF",
           black: "#09090D",
-          orange: "#F06A4D"
+          // orange: "#F06A4D"
         },
         divider: colors.grey[800],
         text: {
