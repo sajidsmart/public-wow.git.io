@@ -1,5 +1,5 @@
 import Box from "@mui/material/Box";
-import { useState } from "react";
+import React from "react";
 import AppNavBar from "@/components/appBar";
 import DrawerComponent from "components/drawer";
 import Typography from "@mui/material/Typography";
@@ -15,7 +15,8 @@ interface IHeaderProps {
 
 function index(props: IHeaderProps) {
   const { container } = props;
-  const [mobileOpen, setMobileOpen] = useState(false);
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const [mobileOpen, setMobileOpen] = React.useState<boolean>(false);
 
   const handleDrawerToggle = () => setMobileOpen((s) => !s);
 
